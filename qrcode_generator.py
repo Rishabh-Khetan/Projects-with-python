@@ -7,8 +7,8 @@ def generate_qr_code(data, filename):
         error_correction=qrcode.constants.ERROR_CORRECT_L,  # controls the error correction used for the QR Code where L is about 7% or less errors can be corrected and M is about 15% or less and H is about 30% or less
         box_size=10,  # controls how many pixels each “box” of the QR code is
         border=4,  # controls how many boxes thick the border should be
-    )
-    
+    ) 
+     
     # Add data to the instance
     qr.add_data(data)
     qr.make(fit=True)
